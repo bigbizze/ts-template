@@ -1,0 +1,1 @@
+--require ./babel-register.cjs --require ts-node/register --require @babel/register
