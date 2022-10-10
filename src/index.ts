@@ -1,9 +1,9 @@
-import promise_then_catch from "promise-then-catch/lib";
+
 
 export const main = async () => {
-  const hello = 0;
+  console.log("hello world");
 };
 
 if (require.main === module) {
-  promise_then_catch(main);
+  main().catch(console.error);
 }
