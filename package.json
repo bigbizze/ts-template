@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "preinstall": "npx only-allow pnpm",
     "start": "node --require ./babel-register.cjs --require ts-node/register --require @babel/register src/index.ts"
   },
   "author": "",
