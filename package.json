@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "preinstall": "npx only-allow pnpm",
-    "start": "node --require ./babel-register.cjs --require ts-node/register --require @babel/register src/index.ts"
+    "preinstall": "npx only-allow yarn",
+    "start": "node --require ./babel-register.cjs --require ts-node/register --require @babel/register src/index.ts",
+    "test": "jest"
   },
   "author": "",
   "license": "ISC",
