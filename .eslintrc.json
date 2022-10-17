@@ -103,7 +103,7 @@
     ],
     "comma-dangle": "error",
     "curly": "off",
-    "default-case": "error",
+    "default-case": "off",
     "dot-notation": "off",
     "eol-last": "off",
     "eqeqeq": [
@@ -125,12 +125,6 @@
       "undefined"
     ],
     "id-match": "off",
-
-    "indent": [
-      "warn",
-      2,
-      { "SwitchCase": 1 }
-    ],
     "jsdoc/check-alignment": "off",
     "jsdoc/check-indentation": "off",
     "jsdoc/newline-after-description": "off",
@@ -174,7 +168,7 @@
     "no-new-wrappers": "error",
     "no-null/no-null": "off",
     "no-param-reassign": "error",
-    "no-redeclare": "error",
+    "no-redeclare": "off",
     "no-shadow": "off",
     "no-trailing-spaces": "off",
     "no-underscore-dangle": "off",
