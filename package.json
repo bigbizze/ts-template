@@ -6,7 +6,8 @@
   "scripts": {
     "preinstall": "npx only-allow yarn",
     "start": "node --require ts-node/register --require @babel/register src/index.ts",
-    "test": "jest"
+    "test": "jest",
+    "postinstall": "npx rimraf .idea && npx rimraf .git"
   },
   "author": "",
   "license": "ISC",
