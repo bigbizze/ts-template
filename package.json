@@ -7,7 +7,8 @@
     "preinstall": "npx only-allow yarn",
     "start": "node --require ts-node/register --require @babel/register src/index.ts",
     "test": "jest",
-    "postinstall": "npx rimraf .idea && npx rimraf .git"
+    "postinstall": "yarn init-run && npx rimraf .idea",
+    "init-run": "[ ! -f uninstalled ] && exit 0 || command && rm uninstalled && npx rimraf .git"
   },
   "author": "",
   "license": "ISC",
