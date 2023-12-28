@@ -5,15 +5,21 @@
         "*.ts",
         "*.tsx"
       ],
+      "excludedFiles": [
+        "supamigra/migrations/20231212012635_initial_migration.ts"
+      ],
       "parserOptions": {
         "project": [
           "./tsconfig.json",
-          "./tsconfig.cypress.json"
+          "./tsconfig.jest.json"
         ]
       }
     },
     {
       "files": [ "**/*.stories.tsx" ],
+      "excludedFiles": [
+        "supamigra/migrations/*.ts"
+      ],
       "rules": {
         "no-console": "off"
       }
@@ -25,7 +31,9 @@
   },
   "ignorePatterns": [
     "node_modules",
-    "./types/*"
+    "types",
+    "build",
+    "supamigra"
   ],
   "extends": [
     "prettier",
@@ -35,14 +43,14 @@
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
     "sourceType": "module",
-    "tsconfigRootDir": "",
+    "tsconfigRootDir": "./",
     "project": [
-      "./tsconfig.json"
+      "./tsconfig.json",
+      "./tsconfig.jest.json"
     ]
   },
   "plugins": [
     "eslint-plugin-no-null",
-    "eslint-plugin-jsdoc",
     "@typescript-eslint"
   ],
   "rules": {
@@ -116,6 +124,7 @@
         "allowShortCircuit": true
       }
     ],
+    "no-useless-escape": "off",
     "@typescript-eslint/no-use-before-define": "off",
     "@typescript-eslint/no-var-requires": "off",
     "@typescript-eslint/prefer-namespace-keyword": "error",
