@@ -6,10 +6,7 @@
   "scripts": {
     "preinstall": "npx only-allow yarn",
     "start": "ts-node -T src/index.ts",
-    "test": "jest",
-    "postinstall": "yarn init-run",
-    "init-run": "[[ -f uninstalled ]] && yarn modify-package-json && rm uninstalled && npx rimraf .git && npx rimraf .idea",
-    "modify-package-json": "node package.json-modify.js && rm package.json-modify.js && yarn remove git-user-name"
+    "test": "jest"
   },
   "packageManager": "yarn@4.0.1",
   "author": "",
