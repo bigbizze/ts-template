@@ -5,9 +5,6 @@
         "*.ts",
         "*.tsx"
       ],
-      "excludedFiles": [
-        "supamigra/migrations/20231212012635_initial_migration.ts"
-      ],
       "parserOptions": {
         "project": [
           "./tsconfig.json",
@@ -17,9 +14,6 @@
     },
     {
       "files": [ "**/*.stories.tsx" ],
-      "excludedFiles": [
-        "supamigra/migrations/*.ts"
-      ],
       "rules": {
         "no-console": "off"
       }
