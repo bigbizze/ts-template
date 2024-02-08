@@ -6,7 +6,8 @@
   "scripts": {
     "preinstall": "npx only-allow yarn",
     "start": "ts-node -T src/index.ts",
-    "test": "jest"
+    "test": "jest",
+    "postinstall": "chmod +x setup.sh && ./setup.sh"
   },
   "packageManager": "yarn@4.0.1",
   "author": "",
