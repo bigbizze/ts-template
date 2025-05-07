@@ -7,7 +7,7 @@
     "preinstall": "npx only-allow pnpm",
     "start": "ts-node -T src/index.ts",
     "test": "jest",
-    "postinstall": "exit 0 && chmod +x setup.sh && ./setup.sh"
+    "postinstall": "chmod +x setup.sh && ./setup.sh"
   },
   "author": "",
   "license": "ISC",
